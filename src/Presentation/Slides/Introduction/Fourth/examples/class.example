@@ -1,9 +1,9 @@
 class Example extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       count: 0
-    };
+    }
   }
 
   render() {
@@ -14,6 +14,6 @@ class Example extends React.Component {
           Click me
         </button>
       </div>
-    );
+    )
   }
 }

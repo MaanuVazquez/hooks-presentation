@@ -1,6 +1,6 @@
 import React from 'react'
-import {CodePane, Text, S} from 'spectacle'
-import {BSlide, BS} from '../../../BComponents'
+import {Text, S} from 'spectacle'
+import {BSlide, BS, BCodePane} from '../../../BComponents'
 import classExample from './examples/class.example'
 import {colors} from '../../../theme'
 
@@ -10,7 +10,7 @@ export default function Fourth(props) {
       <Text textSize={32}>
         <S type='bold'>Effects Without Cleanup (Class)</S>
       </Text>
-      <CodePane lang='jsx' className='codePane-medium' source={classExample} />
+      <BCodePane className='codePane-medium' source={classExample} />
       <Text textAlign='left' textSize={24} margin='15px 0'>
         Note how{' '}
         <BS color={colors.primary} type='normal'>

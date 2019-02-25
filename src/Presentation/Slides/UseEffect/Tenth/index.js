@@ -1,6 +1,6 @@
 import React from 'react'
-import {Heading, Text, CodePane} from 'spectacle'
-import {BSlide, BS} from '../../../BComponents'
+import {Heading, Text} from 'spectacle'
+import {BSlide, BS, BCodePane} from '../../../BComponents'
 import {colors} from '../../../theme'
 import classExample from './examples/class.example'
 import hookExample from './examples/hook.example'
@@ -25,7 +25,7 @@ export default function Tenth(props) {
         </BS>{' '}
         :
       </Text>
-      <CodePane lang='jsx' className='codePane-medium' source={classExample} />
+      <BCodePane className='codePane-medium' source={classExample} />
       <Text textAlign='left' textSize={24} margin='15px 0'>
         This requirement is common enough that it is built into the{' '}
         <BS color={colors.primary} type='normal'>
@@ -38,7 +38,7 @@ export default function Tenth(props) {
         </BS>
         :
       </Text>
-      <CodePane lang='jsx' className='codePane-medium' source={hookExample} />
+      <BCodePane className='codePane-medium' source={hookExample} />
       <Text textAlign='left' textSize={24} margin='15px 0'>
         In the second argument you will recognize an array with{' '}
         <BS color={colors.primary} type='normal'>

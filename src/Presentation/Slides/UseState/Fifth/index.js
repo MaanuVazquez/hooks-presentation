@@ -1,6 +1,6 @@
 import React from 'react'
-import {Heading, Text, CodePane} from 'spectacle'
-import {BSlide, BS} from '../../../BComponents'
+import {Heading, Text} from 'spectacle'
+import {BSlide, BS, BCodePane} from '../../../BComponents'
 import objectStateExample from './examples/objectState.example'
 import objectMergeExample from './examples/objectMerge.example'
 import {colors} from '../../../theme'
@@ -17,7 +17,7 @@ export default function Fifth(props) {
         once and put all state into a single object. You can do it if you’d like. Here is an example of a component that
         follows the mouse movement. We keep its position and size in the local state:
       </Text>
-      <CodePane lang='jsx' className='codePane' source={objectStateExample} />
+      <BCodePane source={objectStateExample} />
       <Text textAlign='left' textSize='30' margin='15px 0'>
         Now let’s say we want to write some logic that changes{' '}
         <BS color={colors.primary} type='normal'>
@@ -29,7 +29,7 @@ export default function Fifth(props) {
         </BS>{' '}
         when the user moves their mouse. Note how we have to merge these fields into the previous state object manually:
       </Text>
-      <CodePane lang='jsx' className='codePane' source={objectMergeExample} />
+      <BCodePane source={objectMergeExample} />
       <Text textAlign='left' textSize='24' margin='15px 0 0 0'>
         This is because when we update a state variable, we replace its value. This is different from{' '}
         <BS color={colors.primary} type='normal'>

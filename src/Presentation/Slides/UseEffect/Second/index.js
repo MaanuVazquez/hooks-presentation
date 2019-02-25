@@ -1,6 +1,6 @@
 import React from 'react'
-import {Text, Heading, CodePane} from 'spectacle'
-import {BSlide} from '../../../BComponents'
+import {Text, Heading} from 'spectacle'
+import {BSlide, BCodePane} from '../../../BComponents'
 import functionExample from './examples/function.example'
 
 export default function Second(props) {
@@ -10,7 +10,7 @@ export default function Second(props) {
       <Text textAlign='left' textSize={30}>
         The Effect Hook lets you perform side effects in function components:
       </Text>
-      <CodePane className='codePane-medium' lang='jsx' source={functionExample} />
+      <BCodePane className='codePane-medium' source={functionExample} />
       <Text textAlign='left' textSize={24} margin='15px 0'>
         This snippet is based on the counter example from the first chapter, but we added a new feature to it: we set
         the document title to a custom message including the number of clicks.

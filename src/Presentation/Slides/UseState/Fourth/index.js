@@ -1,6 +1,6 @@
 import React from 'react'
-import {CodePane, Text, Heading} from 'spectacle'
-import {BSlide, BS} from '../../../BComponents'
+import {Text, Heading} from 'spectacle'
+import {BSlide, BS, BCodePane} from '../../../BComponents'
 import classReadExample from './examples/classRead.example'
 import functionReadExample from './examples/functionRead.example'
 import classUpdateExample from './examples/classUpdate.example'
@@ -18,7 +18,7 @@ export default function Fourth(props) {
         </BS>
         :
       </Text>
-      <CodePane className='codePane' lang='jsx' source={classReadExample} />
+      <BCodePane source={classReadExample} />
       <Text textAlign='left' textSize={30} margin='15px 0'>
         In a function, we can use{' '}
         <BS color={colors.primary} type='normal'>
@@ -26,7 +26,7 @@ export default function Fourth(props) {
         </BS>{' '}
         directly:
       </Text>
-      <CodePane className='codePane' lang='jsx' source={functionReadExample} />
+      <BCodePane source={functionReadExample} />
       <Heading size={6} margin='30px 0 0 0  '>
         Updating State
       </Heading>
@@ -41,7 +41,7 @@ export default function Fourth(props) {
         </BS>{' '}
         state:
       </Text>
-      <CodePane className='codePane' lang='jsx' source={classUpdateExample} />
+      <BCodePane source={classUpdateExample} />
       <Text textAlign='left' textSize={30} margin='15px 0'>
         In a function, we already have{' '}
         <BS color={colors.primary} type='normal'>
@@ -57,7 +57,7 @@ export default function Fourth(props) {
         </BS>
         :
       </Text>
-      <CodePane className='codePane' lang='jsx' source={functionUpdateExample} />
+      <BCodePane source={functionUpdateExample} />
     </BSlide>
   )
 }

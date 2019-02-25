@@ -1,6 +1,6 @@
 import React from 'react'
-import {Heading, Layout, Fill, CodePane} from 'spectacle'
-import {BSlide} from '../../../BComponents'
+import {Heading, Layout, Fill} from 'spectacle'
+import {BSlide, BCodePane} from '../../../BComponents'
 import ClassExample from './examples/class.example'
 import FunctionExample from './examples/function.example'
 
@@ -12,10 +12,10 @@ export default function Fourth(props) {
       </Heading>
       <Layout>
         <Fill>
-          <CodePane className='codePane' lang='jsx' source={FunctionExample} />
+          <BCodePane source={FunctionExample} />
         </Fill>
         <Fill>
-          <CodePane margin='0 0 0 20px' className='codePane' lang='jsx' source={ClassExample} />
+          <BCodePane margin='0 0 0 20px' source={ClassExample} />
         </Fill>
       </Layout>
     </BSlide>

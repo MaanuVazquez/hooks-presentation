@@ -6,6 +6,7 @@ import * as UseState from './Slides/UseState'
 import * as UseEffect from './Slides/UseEffect'
 import 'normalize.css'
 import './global.css'
+import './prismjs.css'
 
 const BRAND_SLIDE = {
   bgColor: 'primary'

@@ -1,6 +1,6 @@
 import React from 'react'
-import {Text, CodePane} from 'spectacle'
-import {BSlide, BS} from '../../../BComponents'
+import {Text} from 'spectacle'
+import {BSlide, BS, BCodePane} from '../../../BComponents'
 import classState from './examples/classState.example'
 import functionState from './examples/functionState.example'
 import {colors} from '../../../theme'
@@ -27,7 +27,7 @@ export default function Second(props) {
         </BS>{' '}
         in the constructor:
       </Text>
-      <CodePane className='codePane' lang='jsx' source={classState} />
+      <BCodePane source={classState} />
       <Text textSize={32} textAlign='left' margin='30px 0'>
         In a function component, we have no{' '}
         <BS color={colors.primary} type='normal'>
@@ -43,7 +43,7 @@ export default function Second(props) {
         </BS>{' '}
         Hook directly inside our component:
       </Text>
-      <CodePane className='codePane' lang='jsx' source={functionState} />
+      <BCodePane source={functionState} />
     </BSlide>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import {Text, CodePane} from 'spectacle'
-import {BSlide} from '../../../BComponents'
+import {Text} from 'spectacle'
+import {BSlide, BCodePane} from '../../../BComponents'
 import Introduction from './examples/introduction.example'
 
 export default function Third(props) {
@@ -10,7 +10,7 @@ export default function Third(props) {
         Hooks are a new addition in React 16.8. They let you use state and other React Features without writing a class.
       </Text>
       <br />
-      <CodePane className='codePane' lang='jsx' source={Introduction} />
+      <BCodePane source={Introduction} />
       <Text textSize={32} textAlign='left' margin='35px 0 0 0'>
         <strong>But what is a Hook?</strong> A hook is a special function that lets you “hook into” React features. For
         example, useState is a hook that lets you add React to function components.
