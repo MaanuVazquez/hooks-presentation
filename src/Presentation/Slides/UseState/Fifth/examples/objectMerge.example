@@ -1,0 +1,6 @@
+// ...
+function updateMousePosition(left, top) {
+    // Spreading "...state" ensures we don't "lose" width and height
+    setState(state => {...state, left, top})
+    // Note: this implementation is a lot simplified
+}

@@ -1,0 +1,3 @@
+<button onClick={() => this.setState({ count: this.state.count + 1 })}>
+    Click me
+</button>
